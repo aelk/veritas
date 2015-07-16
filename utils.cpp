@@ -10,12 +10,29 @@ string_list find_words(const std::string file_str)
     return words;
 }
 
+bool not_alnum(const char c)
+{
+    // predicate used in file_to_str function
+    // keeps spaces and alphanumeric characters; removes everything else
+    if (isspace(c)) {
+        return false;
+    } else {
+        return !std::isalnum(c);
+    }
+}
+
 const std::string file_to_str(const std::string file_name)
 {
     std::ifstream file(file_name);
     std::stringstream buffer;
     buffer << file.rdbuf();
-    return buffer.str();
+
+    std::string file_str = buffer.str();
+    // remove all non-alphanumeric characters from file_str:
+    file_str.erase(std::remove_if(file_str.begin(), file_str.end(),
+        not_alnum), file_str.end());
+
+    return file_str;
 }
 
 bool contains_seq(const std::string file_str, const std::string seq)
