@@ -20,6 +20,7 @@ int calculate_progress(const int files_seen, const int total_files)
     return ceil(100*(static_cast<double>(files_seen)/total_files));
 }
 
+// source: https://stackoverflow.com/questions/5056645
 template<typename A, typename B>
 std::pair<B,A> flip_pair(const std::pair<A,B> &p)
 {
