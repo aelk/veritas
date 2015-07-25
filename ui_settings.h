@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'settings.ui'
 **
-** Created by: Qt User Interface Compiler version 5.3.2
+** Created by: Qt User Interface Compiler version 4.8.6
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -80,15 +80,15 @@ public:
 
     void retranslateUi(QWidget *Settings)
     {
-        Settings->setWindowTitle(QApplication::translate("Settings", "Form", 0));
-        label->setText(QApplication::translate("Settings", "Change the phrase length (the default is 6): ", 0));
-        label_2->setText(QApplication::translate("Settings", "Only show files with more than ", 0));
-        pushButton->setText(QApplication::translate("Settings", "Apply", 0));
-        save_check_box->setText(QApplication::translate("Settings", "Save changes", 0));
-        pushButton_2->setText(QApplication::translate("Settings", "Cancel", 0));
-        label_3->setText(QApplication::translate("Settings", "plagiarized phrases", 0));
-        label_4->setText(QApplication::translate("Settings", "Where do you want to save the results file to?", 0));
-        choose_directory->setText(QApplication::translate("Settings", "Choose directory...", 0));
+        Settings->setWindowTitle(QApplication::translate("Settings", "Form", 0, QApplication::UnicodeUTF8));
+        label->setText(QApplication::translate("Settings", "Change the phrase length (the default is 6): ", 0, QApplication::UnicodeUTF8));
+        label_2->setText(QApplication::translate("Settings", "Only show files with more than ", 0, QApplication::UnicodeUTF8));
+        pushButton->setText(QApplication::translate("Settings", "Apply", 0, QApplication::UnicodeUTF8));
+        save_check_box->setText(QApplication::translate("Settings", "Save changes", 0, QApplication::UnicodeUTF8));
+        pushButton_2->setText(QApplication::translate("Settings", "Cancel", 0, QApplication::UnicodeUTF8));
+        label_3->setText(QApplication::translate("Settings", "plagiarized phrases", 0, QApplication::UnicodeUTF8));
+        label_4->setText(QApplication::translate("Settings", "Where do you want to save the results file to?", 0, QApplication::UnicodeUTF8));
+        choose_directory->setText(QApplication::translate("Settings", "Choose directory...", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };

@@ -1,21 +1,143 @@
-<ui version="4.0" >
- <author></author>
- <comment></comment>
- <exportmacro></exportmacro>
- <class>Form</class>
- <widget class="QWidget" name="Form" >
-  <property name="geometry" >
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Settings</class>
+ <widget class="QWidget" name="Settings">
+  <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>485</width>
+    <height>340</height>
    </rect>
   </property>
-  <property name="windowTitle" >
+  <property name="windowTitle">
    <string>Form</string>
   </property>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>100</y>
+     <width>351</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Change the phrase length (the default is 6): </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>40</y>
+     <width>231</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Only show files with more than </string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>280</y>
+     <width>102</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Apply</string>
+   </property>
+  </widget>
+  <widget class="QCheckBox" name="save_check_box">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>240</y>
+     <width>131</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Save changes</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>280</y>
+     <width>102</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Cancel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>40</y>
+     <width>151</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>plagiarized phrases</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="user_seq_len">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>90</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="min_seqs">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>30</y>
+     <width>91</width>
+     <height>41</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>160</y>
+     <width>341</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Where do you want to save the results file to?</string>
+   </property>
+  </widget>
+  <widget class="QCommandLinkButton" name="choose_directory">
+   <property name="geometry">
+    <rect>
+     <x>270</x>
+     <y>180</y>
+     <width>195</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Choose directory...</string>
+   </property>
+  </widget>
  </widget>
- <pixmapfunction></pixmapfunction>
+ <resources/>
  <connections/>
 </ui>

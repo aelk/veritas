@@ -1,25 +1,28 @@
 #ifndef VERITAS_GUI_HPP
 #define VERITAS_GUI_HPP
 
-#include <vector>
-#include <string>
+#include "utils.hpp"
 #include "ui_veritas_gui.hpp"
+#include "ui_settings.hpp"
 
-class Veritas : public QWidget, private Ui::veritasgui
+class Veritas : public QWidget, private Ui::veritas_gui
 {
     Q_OBJECT
 
 public:
-    Veritas(QWidget *parent = 0);
-    void update_progress_bar(int value);
+    Veritas();
+    void update_progress_bar(const unsigned int value);
 
 public slots:
     void getFiles();
     void startApp();
+    void openREADME();
+    void exitApp();
 
 private:
-    Ui::veritasgui *ui;
-    std::vector<std::string> file_names;
+    Ui::veritas_gui *ui;
+    std::string path;
+    string_list file_names;
 };
 
 #endif
